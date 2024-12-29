@@ -15,7 +15,10 @@ Hello, and welcome to my blog. Here, I share insights, and experiences related t
 
 ## Latest Posts
 Below, you'll find my most recent posts. Click on the title to read more!
-- [My First Blog Post](_posts/2024-12-29-Welcome/)
+{% for post in site.posts limit:5 %}
+- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+{% endfor %}
+
 ## About Me
 My name is **Akhil Chuliyat Jose**, and I'm a Master's student in International Software Systems Science at the University of Bamberg. I have experience in software development, mobile application, and exploring the fascinating world of **AI and software quality management**.
 
