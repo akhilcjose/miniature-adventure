@@ -14,7 +14,7 @@ Hello, and welcome to my blog. Here, I share insights, and experiences related t
 ## Latest Posts
 Below, you'll find my most recent posts. Click on the title to read more!
 {% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+- [{{ post.title }}]({{ site.baseurl }}{{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
 
 ## About Me
