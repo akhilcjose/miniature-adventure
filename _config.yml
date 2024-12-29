@@ -5,3 +5,4 @@ gems:
   - jekyll-paginate
 paginate: 5 # Number of posts per page
 paginate_path: "/page:num/"
+baseurl: /miniature-adventure # Add this line
