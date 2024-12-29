@@ -15,7 +15,7 @@ Hello, and welcome to my blog. Here, I share insights, and experiences related t
 
 ## Latest Posts
 Below, you'll find my most recent posts. Click on the title to read more!
-{% for post in site.posts limit:5 %}
+{% for post in paginator.posts %}
 - [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
 
@@ -33,4 +33,10 @@ Have questions or want to connect? Reach out via:
 - [LinkedIn](https://www.linkedin.com/in/akhil-chuliyat-jose-701014195/)
 
 ---
+{% if paginator.previous_page %}
+[Previous]({{ paginator.previous_page_path }})
+{% endif %}
 
+{% if paginator.next_page %}
+[Next]({{ paginator.next_page_path }})
+{% endif %}
