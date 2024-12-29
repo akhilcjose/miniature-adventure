@@ -1,3 +1,7 @@
 theme: minima
 tile: Blogger
 author: Akhil Chuliyat Jose
+gems:
+  - jekyll-paginate
+paginate: 5 # Number of posts per page
+paginate_path: "/page:num/"
